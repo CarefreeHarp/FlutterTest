@@ -1,0 +1,7 @@
+{
+  "dart.flutterSdkPath": "/home/legion-5080-monster/development/flutter",
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "Dart-Code.dart-code"
+  }
+}
