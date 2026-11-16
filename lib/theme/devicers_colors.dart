@@ -41,6 +41,9 @@ class DevicersColors {
   /// Dorado reservado para las calificaciones.
   static const Color rating = Color(0xFFE1B55C);
 
+  /// Estrellas sin seleccionar de una calificación.
+  static const Color ratingTrack = Color(0xFF423B37);
+
   /// Sombra de los contenedores que flotan sobre el fondo.
   static const Color shadow = Color(0x66000000);
 }

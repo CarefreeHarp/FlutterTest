@@ -88,6 +88,82 @@ class DevicersTextStyles {
     fontWeight: FontWeight.w500,
   );
 
+  // Los estilos siguientes fijan `height` (interlineado / tamaño) para reproducir el
+  // `lineHeight` de Android; sin él, Flutter usa el interlineado propio de la fuente.
+
+  /// Pestañas del encabezado de Home: `SearchHeadingText` de Android con su interlineado.
+  static const TextStyle homeTab = TextStyle(
+    fontFamily: family,
+    letterSpacing: 0,
+    fontSize: 17.28,
+    height: 23.76 / 17.28,
+    fontWeight: FontWeight.w700,
+  );
+
+  /// Equivale a `MaterialTheme.typography.titleMedium`, como el nombre del producto en el feed.
+  static const TextStyle titleMedium = TextStyle(
+    fontFamily: family,
+    letterSpacing: 0,
+    fontSize: 19.44,
+    height: 25.92 / 19.44,
+    fontWeight: FontWeight.w600,
+  );
+
+  /// Equivale a `MaterialTheme.typography.titleSmall`, como el autor y el título de una reseña.
+  static const TextStyle titleSmall = TextStyle(
+    fontFamily: family,
+    letterSpacing: 0,
+    fontSize: 17.28,
+    height: 21.6 / 17.28,
+    fontWeight: FontWeight.w600,
+  );
+
+  /// Equivale a `MaterialTheme.typography.bodySmall`, como la antigüedad y la marca de una reseña.
+  static const TextStyle bodySmall = TextStyle(
+    fontFamily: family,
+    letterSpacing: 0,
+    fontSize: 12.96,
+    height: 17.28 / 12.96,
+    fontWeight: FontWeight.w400,
+  );
+
+  /// Equivale a `MaterialTheme.typography.labelLarge`, como el botón "Ver más".
+  static const TextStyle labelLarge = TextStyle(
+    fontFamily: family,
+    letterSpacing: 0,
+    fontSize: 15.12,
+    height: 21.6 / 15.12,
+    fontWeight: FontWeight.w600,
+  );
+
+  /// Cuerpo de las tarjetas de reseña (`ReviewContentText`).
+  static const TextStyle reviewContent = TextStyle(
+    fontFamily: family,
+    letterSpacing: 0,
+    fontSize: 16.28,
+    height: 23.76 / 16.28,
+    fontWeight: FontWeight.w400,
+  );
+
+  /// Conteos de interacción del feed (`FeedReviewActionCountText`).
+  static const TextStyle feedReviewActionCount = TextStyle(
+    fontFamily: family,
+    letterSpacing: 0,
+    fontSize: 16.848,
+    height: 22.464 / 16.848,
+    fontWeight: FontWeight.w700,
+  );
+
+  /// Estrellas grandes de calificación (`RatingStarsLargeText`).
+  ///
+  /// No declara familia a propósito: Plus Jakarta Sans no incluye ★ y se resuelve con la
+  /// tipografía del sistema, igual que en Android.
+  static const TextStyle ratingStarsLarge = TextStyle(
+    letterSpacing: 0,
+    fontSize: 19.44,
+    height: 25.92 / 19.44,
+  );
+
   /// Etiquetas bajo los íconos de la barra de navegación.
   static const TextStyle navigationLabel = TextStyle(
     fontFamily: family,
